@@ -1,5 +1,5 @@
 01 番号相关信息检索程序，录入程序。
-	URL+数字请求本地程序
+	URL+数字请求本地程序（01.py）
 		python xxx.py -u https://baidu.com -start 1 -stop 2
 		python xxx.py -u https://baidu.com --file err.txt
 		
@@ -7,13 +7,24 @@
 		err.txt			一次错误日志
 		err2.txt		二次错误
 			手动err2复制到1，并且删除err2.txt的内容
+	已知问题
+		大数字会404，但游览器正常原因未找到
+			254
 					
 02	索引数据处理写入数据库	
 	02.1.py			脚本1 javbus页面数据初步插入，番号 名称 发行日期  高清 字幕 图片连接 更新日期 
 		python ./test.py --dir ./javbus-page
 			数据库插入脚本
+		
+	02.1.py			脚本1 javbus页面数据二次插入， 长度、导演、 制作商、发行商、类别、演员
+		python ./test.py --dir ./javbus-page
+			数据库插入脚本
+			
 		图片连接（cover_image） 更新日期 
 		
+去重
+	python ./去重.py xxx.txt			#去重保留重复
+	python ./去重.py xxx.txt -del		#去重不保留重复
 	
 pip
 	
