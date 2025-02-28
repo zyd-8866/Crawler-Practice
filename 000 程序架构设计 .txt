@@ -21,7 +21,13 @@
 			数据库插入脚本
 			
 		图片连接（cover_image） 更新日期 
+03	番号下载
+		python ./03.py ./test.txt
+		python ./03.py MADV-577
 		
+			download_video_err.txt			失败番号
+			download_video					保存目录
+			
 去重
 	python ./去重.py xxx.txt			#去重保留重复
 	python ./去重.py xxx.txt -del		#去重不保留重复
